@@ -18,9 +18,7 @@ import lombok.NoArgsConstructor;
 public class InvestigatorL1 {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String userL1;
-	private String sasCipNumber;
 	private String caseNumber;
 }

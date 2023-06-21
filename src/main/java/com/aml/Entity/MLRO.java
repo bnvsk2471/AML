@@ -18,9 +18,7 @@ import lombok.NoArgsConstructor;
 public class MLRO {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String mlro;
-	private String sasCipNumber;
 	private String caseNumber;
 }

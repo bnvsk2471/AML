@@ -10,11 +10,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="SAS_CASE_DETAILS")
-@Entity
 public class CaseDetails {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,11 +26,8 @@ public class CaseDetails {
 	/*
 	 * 1.Not Assigned
 	 * 2.L1
-	 * 3.L2
+	 * 3.L2  
 	 */
 	private String currentStatus;
-	
-	private String userInvestigator;
-									
 
 }

@@ -1,4 +1,4 @@
-package com.aml.AMLModule;
+package com.aml;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

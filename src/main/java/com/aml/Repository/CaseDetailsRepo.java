@@ -8,5 +8,5 @@ import com.aml.Entity.CaseDetails;
 
 @Repository
 public interface CaseDetailsRepo extends JpaRepository<CaseDetails, Integer> {
-
+	public CaseDetails findBycaseNumber(String casenumber);
 }
