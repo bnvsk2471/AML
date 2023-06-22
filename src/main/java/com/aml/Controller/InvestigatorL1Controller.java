@@ -37,16 +37,6 @@ public class InvestigatorL1Controller {
 			@PathVariable String casenumber,
 			@PathVariable String role
 			){
-		L1Service.sendRollTo(role,casenumber);
-		
-		if(role.equals("CLOSE")) {
-		return ResponseEntity.ok("Case file is closed");
-		}else {
-		return ResponseEntity.ok("Case file sent to " + role);
-		}
-	}
-	
-	
-	
-
+				return ResponseEntity.ok(L1Service.sendRollTo(role,casenumber));
+			}
 }
