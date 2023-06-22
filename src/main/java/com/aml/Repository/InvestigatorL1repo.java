@@ -8,6 +8,5 @@ import com.aml.Entity.InvestigatorL1;
 @Repository
 public interface InvestigatorL1repo extends JpaRepository<InvestigatorL1, Integer>{
 	
-	
-
+	public InvestigatorL1 findBycaseNumber(String casenumber);
 }
